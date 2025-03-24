@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Insurance Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="./static/favicon.svg">
+    {#bundle /}
+</head>
+
+<body>
+<header>
+    <div class="banner" onclick="location.href='/';">
+        <img src="/static/parasol-logo.svg" alt="tic"/>
+    </div>
+    <tic-nav></tic-nav>
+</header>
+
+<main>
+    <div id="outlet">
+        <img class="js-loading-indicator" src="/static/loader.svg"/>
+    </div>
+</main>
+
+<footer>
+    <span>&copy; {config:['copyright.year']} parasol assurance | v{config:['quarkus.application.version']}</span>
+</footer>
+</body>
+
+</html>
